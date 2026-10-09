@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A little collection of beautiful places, quiet moments, and everyday details."
+    />
+    <title>Still & Somewhere — Photo Gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="wordmark" href="#" aria-label="Still and Somewhere home">
+        <span class="wordmark-icon" aria-hidden="true">s.</span>
+        <span>still & somewhere</span>
+      </a>
+      <a class="header-link" href="#gallery">
+        Explore the gallery
+        <span aria-hidden="true">↘</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow"><span></span> A COLLECTION OF MOMENTS</p>
+        <h1 id="page-title">A little light,<br />caught in the <em>wild.</em></h1>
+        <div class="intro-bottom">
+          <p>
+            Places to wander. Moments to keep.<br class="desktop-break" />
+            A collection for the quietly curious.
+          </p>
+          <a class="scroll-link" href="#gallery">
+            SCROLL TO EXPLORE <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+        <span class="intro-decoration" aria-hidden="true">01 — 08</span>
+      </section>
+
+      <section class="gallery-section" id="gallery" aria-label="Photo gallery">
+        <div class="gallery-heading">
+          <div>
+            <p class="eyebrow">THE COLLECTION</p>
+            <h2>Little things, <em>beautifully seen.</em></h2>
+          </div>
+          <p class="photo-count" aria-live="polite">
+            <span id="visible-count">08</span> photographs
+          </p>
+        </div>
+
+        <div class="filter-list" role="group" aria-label="Filter photographs">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All moments</button>
+          <button class="filter-button" type="button" data-filter="nature" aria-pressed="false">Nature</button>
+          <button class="filter-button" type="button" data-filter="places" aria-pressed="false">Places</button>
+          <button class="filter-button" type="button" data-filter="details" aria-pressed="false">Little details</button>
+        </div>
+
+        <div class="gallery-grid">
+          <button class="photo-card photo-card--tall" type="button" data-category="nature" data-title="Where the wild things grow" data-location="Dolomites, Italy">
+            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=1100&q=85" alt="A deer standing in a sunlit forest" loading="lazy" />
+            <span class="photo-overlay"><span>Where the wild things grow</span><span>Dolomites, Italy</span></span>
+            <span class="photo-index">01</span>
+          </button>
+          <button class="photo-card" type="button" data-category="places" data-title="A slower kind of morning" data-location="The coast, Portugal">
+            <img src="https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=900&q=85" alt="A small wooden house among green trees" loading="lazy" />
+            <span class="photo-overlay"><span>A slower kind of morning</span><span>The coast, Portugal</span></span>
+            <span class="photo-index">02</span>
+          </button>
+          <button class="photo-card photo-card--wide" type="button" data-category="nature" data-title="The hush between the waves" data-location="Amalfi Coast, Italy">
+            <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1200&q=85" alt="Soft blue ocean waves rolling toward shore" loading="lazy" />
+            <span class="photo-overlay"><span>The hush between the waves</span><span>Amalfi Coast, Italy</span></span>
+            <span class="photo-index">03</span>
+          </button>
+          <button class="photo-card" type="button" data-category="details" data-title="A little bit of golden hour" data-location="Somewhere in the countryside">
+            <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=900&q=85" alt="Golden morning light falling over a misty field" loading="lazy" />
+            <span class="photo-overlay"><span>A little bit of golden hour</span><span>Somewhere in the countryside</span></span>
+            <span class="photo-index">04</span>
+          </button>
+          <button class="photo-card photo-card--tall" type="button" data-category="places" data-title="Room for one more story" data-location="Kyoto, Japan">
+            <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=85" alt="A traditional wooden street in Kyoto" loading="lazy" />
+            <span class="photo-overlay"><span>Room for one more story</span><span>Kyoto, Japan</span></span>
+            <span class="photo-index">05</span>
+          </button>
+          <button class="photo-card" type="button" data-category="nature" data-title="A pocket of quiet" data-location="The Pacific Northwest">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=85" alt="A quiet path winding through a green forest" loading="lazy" />
+            <span class="photo-overlay"><span>A pocket of quiet</span><span>The Pacific Northwest</span></span>
+            <span class="photo-index">06</span>
+          </button>
+          <button class="photo-card photo-card--wide" type="button" data-category="details" data-title="The art of doing nothing" data-location="A tiny corner of home">
+            <img src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?auto=format&fit=crop&w=1200&q=85" alt="A sun-drenched room with a cozy armchair" loading="lazy" />
+            <span class="photo-overlay"><span>The art of doing nothing</span><span>A tiny corner of home</span></span>
+            <span class="photo-index">07</span>
+          </button>
+          <button class="photo-card" type="button" data-category="places" data-title="Somewhere worth getting lost" data-location="The Swiss Alps">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85" alt="Mountain peaks rising above the clouds" loading="lazy" />
+            <span class="photo-overlay"><span>Somewhere worth getting lost</span><span>The Swiss Alps</span></span>
+            <span class="photo-index">08</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark footer-wordmark" href="#">
+        <span class="wordmark-icon" aria-hidden="true">s.</span>
+        <span>still & somewhere</span>
+      </a>
+      <p>Made for the moments in between.</p>
+      <a class="back-to-top" href="#" aria-label="Back to top">BACK TO TOP ↑</a>
+    </footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photograph viewer" hidden>
+      <button class="lightbox-close" type="button" aria-label="Close photograph viewer">✕</button>
+      <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous photograph">←</button>
+      <figure class="lightbox-figure">
+        <img class="lightbox-image" src="" alt="" />
+        <figcaption>
+          <span class="lightbox-title"></span>
+          <span class="lightbox-location"></span>
+        </figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" type="button" aria-label="Next photograph">→</button>
+      <span class="lightbox-counter" aria-live="polite"></span>
+    </div>
+  </body>
+</html>
